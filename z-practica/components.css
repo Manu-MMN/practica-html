@@ -1,0 +1,52 @@
+.nav .list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav .item {
+    margin-left: 1rem;
+}
+
+.btn {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: background-color 0.3s linear, width 3s linear;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+}
+
+.menu-btn {
+    display: none; /* Oculto por defecto */
+}
+
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none; /* Ocultamos los botones en pantallas móviles */
+    }
+
+    .menu-btn {
+        display: inline-block; /* Mostramos el botón Menú en pantallas móviles */
+        background-color: white;
+        color: black;
+    }
+}
+
+@media (hover: hover) {
+    .btn {
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: var(--main-brand-color-light);
+        width: 180px;
+    }
+}

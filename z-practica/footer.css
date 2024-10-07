@@ -1,0 +1,42 @@
+/* Footer Styling */
+.footer {
+    background-color: var(--bg-color);
+    color: var(--main-text-color);
+    padding: 0.25rem 0.13rem;
+    text-align: center;
+    font-family: var(--main-font-family);
+    border-top: 1px solid var(--border-color);
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-icon {
+    margin-top: 0.5rem;
+    width: 30px; /* Ajusta el tamaño de los íconos */
+    height: 30px;
+    transition: transform 0.3s ease-in-out; /* Transición de escalado */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Escala el ícono al pasar el mouse */
+}
+
+.footer-text {
+    font-size: 0.8rem;
+    color: var(--main-text-color);
+}
+
+/* Responsive Footer */
+@media (min-width: 768px) {
+    .social-icon {
+        width: 40px; /* Ajuste para pantallas más grandes */
+        height: 40px;
+    }
+}

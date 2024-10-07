@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeflix </title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/info.css">
+    <link rel="stylesheet" href="styles/assets.css">
+    <link rel="stylesheet" href="styles/shows.css">
+    <meta property="og:title" content="Codeflix">
+    <meta property="og:description" content="Codeflix best movies">
+    <meta property="og:image" content="https://github.com/KeepCodingWeb17/html-css/blob/main/assets/app/catalog.jpg?raw=true
+    ">
+    <style>
+        .spinner {
+            margin: 4rem;
+            border-left: 1px solid red;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transform: rotate(90deg);  /* deg es para rados, le acabo de decir que rote noventa grados, y he creado una media luna*/
+
+            /* animation-name: test;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1; */
+            animation: spinner 1s linear infinite;
+            
+        }
+        @media screen and (prefers-reduced-motion: no-preference) {    /* con meter todos los keyframes dentro de esto, la gente que desactive las animaciones de windows 
+            no verá nuestras anicaciones */
+            
+        
+        @keyframes spinner {
+        0% {
+            transform: rotate(0deg)   /* a los 0 segundos, la animación tendrá 50 px*/
+        }
+        100% {
+            transform: rotate(360deg)
+        }  
+        }
+        .progress {
+            height: 20px;
+            background-color: red;
+            width: 20px;
+            position: fixed;
+            top: 0;
+            z-index: 999;
+            animation: progress 1s linear;
+            animation-fill-mode: forwards;
+            animation-timeline: scroll ;
+        }
+        @supports (animation-timeline: scroll()){    /* si la animación de scroll está soportada, se realizará*/
+            .progress {
+                animation-timeline: scroll();
+            }
+
+        }
+        @keyframes progress {
+            0%{
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+            
+        }
+    }
+    </style>
+
+</head>
+
+<body class="main-bg">
+    <div class="spinner"></div>
+    <div class="progress"></div>
+    <h1 class="sr-only">Codeflix</h1> <!--esto con sr-only no lo hace visual, pero para el seo es importante-->
+        <header class="header">
+            <img class="image" src="./assets/app/codeflix.png" alt="Codeflix brand">
+            <nav class="nav">
+                <ul class="list">
+                    <li class="item">
+                        <a class="btn hidden" href="#shows">All shows</a>
+                    </li>
+                    <li class="item">
+                        <a class="btn" href="/signin.html">Sign in</a>
+                        <!-- <a href="https://google.com" target="_blank" rel="noopener noreferrer">Link externo</a> -->
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="banner">
+            <div class="image"></div>
+            <div class="content">
+                <h2>Unlimited movies, TV shows, and more</h2>
+                <p class="bold">Watch anywhere. Cancel anytime</p>
+                <p>Ready to watch?</p>
+            </div>
+        </section>
+        <main>
+            <section class="info">
+                <dir>
+                    <h2>Watch everywhere</h2>
+                    <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and tv.</p>
+                </dir>
+                <div class="assets">
+                    <img src="assets/app/device-pile.png" alt="">
+                    <video src="./assets/app/video-devices.m4v" autoplay muted loop>
+                        <source src="./assets/app/video-devices.m4v" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+
+            <section id="shows" class="shows">
+                <section>
+                    <h2>New shows</h2>
+                    <ul class="list">
+                        <li>
+                            <figure>
+                                <img src="./assets/series/serie_1.jpg" alt="show 1">
+                                <figcaption>Show 1</figcaption>
+                            </figure>
+
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./assets/series/serie_2.jpg" alt="show 2">
+                                <figcaption>Show 2</figcaption>
+                            </figure>
+
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./assets/series/serie_3.jpg" alt="show 3">
+                                <figcaption>Show 3</figcaption>
+                            </figure>
+
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./assets/series/serie_4.jpg" alt="show 4">
+                                <figcaption>Show 4</figcaption>
+                            </figure>
+
+                        </li>
+                    </ul>
+                </section>
+                <section></section>
+
+
+        </main>
+        <footer class="footer">
+            <p>2024 <strong>Codeflix</strong>. All rights reserved</p>
+        </footer>
+</body>
+
+</html>

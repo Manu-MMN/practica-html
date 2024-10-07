@@ -1,0 +1,45 @@
+/* Banner Styling */
+.banner {
+    height: 75vh;  /* Se mantiene para ajustar la altura al 75% del viewport */
+    width: 100vw;  /* Asegurarse de que el banner ocupe el ancho completo de la ventana */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-text-color);
+    font-family: var(--main-font-family);
+    text-align: center;
+}
+
+.banner .image {
+    background-image: url('/z-practica/images/pics/_MG_8728-1.jpg');  /* Imagen pic1 para móviles */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  /* La imagen cubre todo el contenedor */
+    z-index: -1;  /* Se asegura que la imagen esté detrás del texto */
+    opacity: 0.5;  /* Ajuste de opacidad */
+}
+
+.banner-text {
+    z-index: 1;  /* Asegura que el texto esté por encima de la imagen */
+    font-size: 3rem;  /* Aumenta el tamaño del texto */
+    font-weight: bold;
+    color: var(--main-text-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);  /* Añade una sombra para hacer el texto más visible */
+}
+
+/* Media Query para pantallas mayores a 768px */
+@media (min-width: 768px) {
+    .banner .image {
+        background-image: url('/z-practica/images/pics/_MG_8727.jpg');  /* Imagen pic2 para pantallas mayores a 768px */
+    }
+
+    .banner-text {
+        font-size: 3.5rem;  /* Aumenta ligeramente el tamaño del texto en pantallas más grandes */
+    }
+}

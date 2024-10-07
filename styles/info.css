@@ -1,0 +1,34 @@
+.info {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 768px;
+}
+.assets {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 16em;
+        z-index: 2;
+
+    }
+    
+    video {
+        top: 30px;
+        position: absolute;
+        width: 10em;
+        z-index: 1;
+    }
+}
+/* 768 no es por casualidad, los números de la media queris se conocen como break points
+y representa en qué momento del ancho de mi aplicación habrá algún cambio*/
+@media screen and (width > 768px) {
+    .info {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2.5em;
+        align-items: center;
+    }
+
+}

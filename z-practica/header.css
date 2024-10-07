@@ -1,0 +1,33 @@
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: var(--bg-color); /* Asegúrate de que el fondo sea transparente si no quieres color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinea la imagen y el texto verticalmente */
+    padding: 0.5rem; /* Reduce el espacio dentro del header */
+}
+
+.image {
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: 100px; /* Forzamos una proporción cuadrada para la imagen */
+    margin-right: 1rem; /* Añadimos espacio entre la imagen y el nombre */
+    border-radius: 5px solid var(white);
+}
+
+.header h1 {
+    font-size: 1.2rem; /* Reducimos el tamaño del texto */
+    margin: 0; /* Elimina el espacio por defecto del h1 */
+}

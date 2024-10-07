@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeflix signin</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/signin.css">
+</head>
+
+<body class="main-bg container">
+    <!-- una clase no va a solapar a otra, solo invalidará las cualidades que comparta, ya que main está por delante de container-->
+    <main class="card"> 
+
+
+        <h1>Sign in</h1>
+        <form method="post" novalidate>
+            <!--action es la acción a donde se mandará la información de todo el formulario (http://Keepcoding/register-user...)-->
+            <div class="form__element">
+                <label for="mail">Email</label>
+                <!-- importante que cada input tenga su label, con el sr only lo oculta pero sigue vivo para accesibilidad-->
+                <input class="input" 
+                type="email" 
+                id="mail" 
+                placeholder="Pon tu correo" 
+                name="correo" 
+                autocomplete="off"
+                value="test@test.com" 
+                required
+                >
+            </div>
+            <div class="form__element">
+                <label for="password">Password</label>
+                <input class="input" type="password" id="password" name="pwd" required>
+            </div>
+            <div class="form__element">
+                <label for="tel">Enter your phone number</label>
+                <input class="input 
+                type="tel"
+                id="tel" 
+                name="phone" 
+                required pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                >
+
+            </div>
+            <div class="form__element">
+                <label class="btn secondary" for="file">Choose a profile picture</label>
+                <input class="pointer" 
+                type="file" 
+                id="file" 
+                name="profile" 
+                accept="image/png" 
+                required
+                >
+            </div>
+            <fieldset class="form__element">
+                <legend>Fav genre</legend>
+                <div>
+                
+                <label for="Shows">shows</label>
+                <!--<input type="checkbox" name="" id="">   son cuadros que se marcan y que se desmarcan-->
+                <input required type="radio" name="genre" id="shows" value="shows" checked>
+                <!-- no se pueden desmarcar(radio) como queremos que esté seleccionado una u otra, han de compartir el mismo name-->
+                <label for="Docu">Docus</label>
+                <input required type="radio" name="genre" id="docu" value="docus">
+                </div>
+            </fieldset>
+            <div class="form__element">
+                <label for="bio">User bio</label>
+                <textarea class="input" required name="userbio" id="bio" rows="10"></textarea maxlength = "150"></textarea> <!-- textarea se utiliza para cuando hay texto libre, comentarios... de todo, textos de más de una línea-->
+            </div>
+            <div class="form__element">
+                <div>
+                <input type="checkbox" name="remember" id="remember">
+                <label class="pointer" for="remember">Remember me</label> <!--si no pongo el for "remember" no se me identifica con el input y no funcionaría-->
+            </div>
+        </div>
+        
+        <button class="btn hidden" type="button">More info</button>
+        <div class="form__element">
+            <label for="country">Country</label>
+            <select class="input name="country" id="country">   <!-- a este select hay que meterle una etiqueta de opciones-->
+                    <option value="ES">Spain</option>
+                    <option value="CO">Colombia</option>
+                    <option value="US">Estados Unidos</option>
+            </select>
+        </div>
+    </div>
+    <div class="form__actions">
+        <button class="btn secondary" type="Reset">Reset</button>
+        <button class="btn" type="Submit">Submit</button> <!-- por defecto cualquier botón hará un submit por estar dentro de un form, se lo ponemos pero si no lo tuviese actuaría igual-->
+    </div>
+    </form>
+
+</main>
+</body>
+</html>

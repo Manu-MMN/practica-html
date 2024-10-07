@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/common.css">  <!--este es el link para llevarnos los estilos del css a una carpeta externa-->
+    
+    <!--
+    <style> /* esto es CSS la etiqueta style es una forma de añadir, no obstante, estaríamos mezclando html y css y se terminaría por volver gigante, y eso se hace con un archivo externo/*
+            Selectores!!!
+            tag, class, id
+        */
+        #pr1{
+            color:red    /* Aquí hemos aplicdo color al id, que es 1,0,0 y por tanto, tiene el porden de preferencia más alto, luego es 0,1,0 y luego es 0,0,1, luego está el elemento
+            en línea que siempre gana, aunque es mala práctica------ Si te encuentras una clase o un id puesto en línea, se puede solucionar poniendo seguido de "red" !important;
+            muy mala práctica, pero si no te queda más remedio, pues a tomar por el culo */
+        }
+        .default-color{
+        color:black   /* (leer despyés de p color azul) aquí tenemos la solución, ponemos el punto, escribimos como se haya llamado la clase y le ponemos ese color, OJO, cualquier elemento que se llame
+        "default-color" pasará a ser negro, se puede usar el "default color botón" para que todos los botones tengan ese color, por ejemplo*/
+        }
+        h1 {
+        color:red;  /* así le estoy diciendo que el color de h1 será ese. Lo hemos cambiado a través del tag */
+        background-color: black;
+        color: blue;  /* no hay alerta, si repites propiedades se cambia por la que esté más abajo, se sobreescribe, no da error. CSS funciona en cascada*/
+        }
+        p{
+        color: blue;  /*en esta web de momento hay dos párrafos, sinembargo, podría surgir la necesidad de que los párrafos tuviesen diferentes nombres, esto se soluciona
+        con clases y con identificadores. usando el class, hay que ir a la tag de html (sólo la que abre, y le añadimos un atributo, como hemos hecho abajo*/
+        }
+
+
+    </style>
+-->
+</head>
+<body class="main-bg">    
+    <h1>Codeflix movies</h1>  <!--con esto ya hemos definido un tag, el h1 representa el encabezado de nuestra página, el contenido principal-->
+    <h2>heading 2</h2> <!--este es el segundo encabezado, se muestra con un tamaño diferente pero eso no es lo importante, eso se puede cambiar. el h1
+    es el encabezado, el netflix, el hbo, el youtube... el título principal, sea del tamaño que sea luego el resto son títulos secundarios -->
+    <h3>heading 3</h3> <!--Hay hasta h6-->
+    <h4>heading 4</h4> <!--este lo he creado escribiendo "h4" Y DÁNDOLE A ENTER-->
+    <p id = "pr1" class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, unde. Cupiditate, nobis. Officiis, <!--Le hemos puesto un id, y eso no se puede repetir en ninguna etiqueta-->
+    ducimus quos asperiores eum quo officia odit aperiam iusto.  <!--Si ponen lorem entre las p, se te genera sólo, si lo multiplicas por dos (*2) te lo crea más grande-->
+    Accusantium rem deleniti ullam minima aliquam saepe eaque.</p>
+    <hr> <!--el hr no se cierra, y lo que hace es añadir una línea (no por cuestión visual) lo que representa a nivel estructura
+    es que estamos SEPARANDO dos contenidos-->
+    <p class="default-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Fugiat labore vitae incidunt quod veniam deserunt, harum quaerat blanditiis ut veritatis 
+    magni. Quidem minima ab magnam incidunt eaque, maiores tenetur fuga!</p>
+    <footer class="footer">
+        <p>2024 <strong>Codeflix</strong>.<br> <em>All rights reserved</em></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Nulla magni nemo recusandae dolorem distinctio numquam, fugit soluta inventore at nostrum 
+        officia voluptate vel beatae quos. Quaerat, numquam. Nulla, harum ducimus.</p> 
+    </footer><!--todo lo que tengamos dentro será el pie de página de la web, depende de dónde
+    lo pongas, se verá en la página  ( arriba, abajo, en medio...) los <strong son in-line block, así como los em, el br NO es para
+    un tema de estilo pero para dar forma a la estructura y slatar de párrafo, entonces sí-->
+</body>
+</html>

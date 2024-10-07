@@ -1,0 +1,38 @@
+    /*
+    background-color: blue;
+    margin-top: 80px;
+    margin-right: 40px;
+    margin-left: 40px;
+       T  R  B  Laquí otra forma de escribir el margin, es lo mismo de antes
+    margin: 80PX, 40PX, 0, 40PX;  
+    /* otra forma es hacerlo para el eje Y y el eje X
+    margin: 80px, 40px; 
+     si solo pongo un valor, sería el valor que afecta a todos los lados 
+    border: 2px solid red;
+     border-radius: 20px, saldría redondeado 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: 20px,20px,20px,20px;
+    padding: 20px,20px;
+    padding: 20px;
+
+    en css también podemos usar VARIABLES, (valores de propiedades, como black, 100px, center
+    italic... Cualquier valor de una propiedad, ¿Cómo se usan?
+    */
+
+
+.footer {
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+    padding: 20px 0;
+    background-color: rgb(28, 128, 216);
+    font-size: 1rem;     /* la propiedad rem es constante, 1 rem es el equivalente a 16 píxeles. El rem va con referenciia al font-size que hayamos definido en el :root, 
+    de modo que siempre seremos relativos al tamaño estandar definido en el root, como con el resto de variables, así que siempre hay que usar rem o em.
+    REM es relativo al root y EM es relativo al contenedor que tengamos por encima y que tenga definida la propiedad (en este caso, el body está por encima del flooter)*/
+
+
+}
+
