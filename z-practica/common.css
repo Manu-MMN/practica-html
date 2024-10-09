@@ -1,34 +1,24 @@
 .main-bg {
-    background-color: rgb(0, 0, 0);
-    background-color: #3c5aa0;
-    background-color: #000;
     background-color: var(--bg-color);
     color: var(--main-text-color);
     opacity: 1;
     font-family: var(--main-font-family);
-    
+
 }
 
 
-  * {
+* {
     box-sizing: border-box;
 }
-/* media queris!!!!!! */
-@media print {    /* esta es la parte del type */
-    *{
-        /* color: red;  si le das a conrol p, la web saldrá en rojo para imprimir 
-        header{
-            display: none;
-        }
-        footer{
-            display: none;
-        }
-        banner {
-            display: none;
-        } */
-        .header.header, .footer, .banner {
-            display: none   /* esto es lo mismo que lo de arriba, por cierto, el header no se va cuando le doy a imprimir, por qué? por que el header está por encima en los documentos linkeados en el index, y no quiero cambiarlo, cómo lo hago? pues poniendo el header.header, ahí le aumento la especificidad*/
-        }
 
-    }    
+/* media queris!!!!!! */
+@media print {
+
+    /* esta es la parte del type */
+    .header.header,
+    .footer,
+    .banner {
+        display: none
+    }
+
 }

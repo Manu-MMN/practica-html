@@ -1,0 +1,14 @@
+# Ignorar todo
+/apuntes
+/assets
+/codeflix
+/fonts
+/grid-example.html
+/portfolio-exercise
+/slides
+/styles
+/vscode-shortcuts
+
+# Pero no ignorar la carpeta z-practica y su contenido
+!/z-practica/
+!/z-practica/**

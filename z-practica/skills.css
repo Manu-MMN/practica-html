@@ -1,0 +1,35 @@
+.skills {
+    position: relative; /* Necesario para el z-index */
+    padding: 2rem; /* Espaciado alrededor */
+    text-align: center; /* Centra el contenido */
+    color: var(--skills-color); /* Color del texto */
+    z-index: 2;
+}
+
+.skill {
+    margin: 1rem 0; /* Espaciado entre habilidades */
+}
+
+.progress-bar {
+    background-color: rgba(255, 255, 255, 0.2); /* Color de fondo de la barra */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta la parte que sobresale */
+    height: 20px; /* Altura de la barra de progreso */
+    width: 100%; /* Hace que la barra cubra todo el ancho del contenedor */
+    margin: 0 auto;  /* Centra la barra en pantallas grandes
+    max-width: 70rem;   Limita la anchura máxima de las barras*/
+}
+
+.progress {
+    background-color: var(--skills-color); /* Color de la barra de progreso */
+    height: 100%; /* Abarca el 100% de la altura */
+    transition: width 0.5s ease; /* Transición suave al cambiar el ancho */
+    width: 0; /* Inicialmente en 0 para animación */
+}
+
+
+@media (min-width: 1024px) {
+    .progress-bar {
+        max-width: 65rem; /* Limita el ancho máximo de las barras en pantallas grandes */
+    }
+}

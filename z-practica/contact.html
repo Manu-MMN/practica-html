@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manu Martínez Contact</title>
+    <link rel="stylesheet" href="/z-practica/normalize.css">
+    <link rel="stylesheet" href="/z-practica/common.css">
+    <link rel="stylesheet" href="/z-practica/components.css">
+</head>
+<body class="main-bg-container">
+    <main class="card">
+        <h1>Let's talk!</h1>
+        <form method="post" novalidate autocomplete="off">
+            <div class="form__element">
+                <label for="name">Name</label>
+                <input class="input"
+                type="Name"
+                id="Name"
+                placeholder="name"
+                required
+                >
+        </div>
+        <div class="form__element">
+            <label for="surname">Surname</label>
+            <input class="input" 
+            type="surname"
+            id="surname"
+            placeholder="name"
+            name="surname"
+            required
+            >    
+        </div>
+        <div class="form__element">
+            <label for="tel">Enter your phone number</label>
+            <input class="input" 
+            type="tel"
+            id="tel"
+            name="phone"
+            placeholder="+34 000 00 00 00"
+            maxlength="17"
+            value="+34"
+            required pattern="\+34 [0-9]{3}-[0-9]{3}-[0-9]{3}"
+            >
+        </div>
+        <div class="form__element">
+            <label for="github.username">GitHub Username</label>
+            <input type="input"
+            type="Github-username"
+            id="Github-username"
+            placeholder="Username"
+            name="Github-username"
+            pattern="^@[^\s]+"
+            >
+
+        </div>
+
+
+
+        </form>
+
+    </main>
+    
+</body>
+</html>

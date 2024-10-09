@@ -1,0 +1,21 @@
+.info-text {
+    padding: 1rem;
+    z-index: 1; /* Mantener el texto por encima */
+    text-align: center;
+    color: var(--main-brand-color-light); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+}
+
+.info-image {
+    position: relative; /* Necesario para posicionar elementos internos */
+    background-image: url('/z-practica/images/pics/_MG_8708.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+    background-position: center 0%; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+    width: 100%; /* Abarca todo el ancho del contenedor */
+    height: 100vh; /* Altura del viewport, ajusta según necesidad */
+    z-index: 1; /* Debe ser menor que el z-index del texto */
+    opacity: 0.5; /* Puede mantener la opacidad que desees */
+}
+
+

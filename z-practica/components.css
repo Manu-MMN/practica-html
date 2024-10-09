@@ -1,3 +1,4 @@
+/* Estilos para la lista de navegación */
 .nav .list {
     display: flex;
     list-style: none;
@@ -9,6 +10,7 @@
     margin-left: 1rem;
 }
 
+/* Estilos para los botones */
 .btn {
     color: black;
     background-color: white;
@@ -16,18 +18,23 @@
     padding: 0.7rem;
     border-radius: 5px;
     border: 1px solid black;
-    transition: background-color 0.3s linear, width 3s linear;
+    transition: background-color 0.5s ease, width 0.5s ease; /* Transición suavizada */
     display: inline-block;
+    width: 140px; /* Tamaño inicial del botón */
+    text-align: center;
 }
 
 .btn:hover {
     background-color: #f0f0f0;
+    width: 180px; /* Ancho del botón cuando se pasa el cursor por encima */
 }
 
+/* Ocultar el botón de menú en versiones de escritorio */
 .menu-btn {
     display: none; /* Oculto por defecto */
 }
 
+/* Estilos específicos para pantallas móviles */
 @media (max-width: 768px) {
     .desktop-only {
         display: none; /* Ocultamos los botones en pantallas móviles */
@@ -40,6 +47,15 @@
     }
 }
 
+/* Estilos específicos para pantallas de escritorio */
+@media (min-width: 768px) {
+    .banner-text {
+        margin-left: 20px; /* Movemos ligeramente el texto hacia la derecha en versión desktop */
+        transition: margin-left 0.5s ease; /* Transición suave para mover el texto al mismo tiempo que los botones */
+    }
+}
+
+/* Animaciones en escritorio */
 @media (hover: hover) {
     .btn {
         cursor: pointer;
@@ -47,6 +63,10 @@
 
     .btn:hover {
         background-color: var(--main-brand-color-light);
-        width: 180px;
+    }
+
+    /* Cuando los botones se expanden, también movemos el texto para compensar */
+    .btn:hover ~ .banner-text {
+        margin-left: 60px; /* Mover el texto más hacia la derecha al mismo tiempo que los botones se expanden */
     }
 }
