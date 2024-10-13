@@ -12,7 +12,7 @@
 }
 
 .banner .image {
-    background-image: url('images/pics/_MG_8728-1.jpg');  /* Imagen pic1 para móviles */
+    background-image: url('images/pics/MG_8728-1.jpg');  /* Imagen pic1 para móviles */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -36,7 +36,7 @@
 /* Media Query para pantallas mayores a 768px */
 @media (min-width: 768px) {
     .banner .image {
-        background-image: url('images/pics/_MG_8727.jpg');  /* Imagen pic2 para pantallas mayores a 768px */
+        background-image: url('images/pics/MG_8727.jpg');  /* Imagen pic2 para pantallas mayores a 768px */
     }
     
 
