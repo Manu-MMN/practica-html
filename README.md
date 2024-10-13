@@ -68,6 +68,11 @@ El proyecto se compone de las siguientes páginas y archivos de estilo:
 - **CSS3**: Para el diseño, con uso de variables y flexbox.
 - **Normalize.css**: Para la estandarización del estilo en navegadores.
 
+## Para un correcto funcionamiento en Pages
+- Para el correcto funcionamiento de del repositorio en GitHub pages tuve que cambiar la ubicación del proyecto en local eliminando la carpeta "z-practica" haciendo que la carpeta principal sea del mismo nombre que el root que establecía GitHub(practica-html)
+- Por algún motivo, Github no reconocía las imágenes que empezaban con "_" por lo que cambié el nombre de todas las imágenes quitando el guión bajo.
+
+
 ## Instrucciones de Instalación
 
 1. Clona el repositorio:
