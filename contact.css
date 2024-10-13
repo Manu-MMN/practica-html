@@ -1,12 +1,10 @@
 /* Aplica la fuente general a todo el formulario */
-
 .back {
     border-color: none;
     border-style: none;
     position: absolute;
     font-family: var(--main-font-family);
     background-color: var(--main-brand-color-light);
-
 }
 
 .contact-title {
@@ -27,8 +25,6 @@ form {
     margin: 0 auto;
     z-index: -1;
 }
-
-
 
 .card {
     background-color: var(--second-bg-color);
@@ -51,22 +47,23 @@ form {
     border-radius: 4px; /* Bordes redondeados */
     margin-bottom: 1rem; /* Espacio entre elementos */
     opacity: 0.9; /* Control de la opacidad */
-    
 }
 
 /* Cuando el input está en foco (clickeado) */
 .input:focus {
-    background-color: rgba(255, 255, 255, 0,8); /* Fondo completamente visible */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo completamente visible */
     border-color: var(--bg-color); /* Borde cambia a azul cuando se hace clic */
     outline: none; /* Eliminamos el borde por defecto */
-    opacity: 1; /* Opacidad completa cuando está en foco */
 }
 
-
+/* Aplica el modelo de caja para evitar problemas de ancho */
+* {
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el ancho total */
+}
 
 form label, form input, form textarea, form button, form legend {
     display: block;
-    margin: 0 auto 0,2rem auto;
+    margin: 0 auto 0.2rem auto;
     width: 100%;
     text-align: center; /* Centra el texto en labels, inputs, textareas y botones */
 }
@@ -82,14 +79,13 @@ textarea.input {
     max-width: 100%; /* El ancho máximo será igual al ancho del formulario */
     max-height: 300px; /* Ajusta la altura máxima */
     min-height: 200px; /* El alto mínimo del textarea */
-    min-width: 340px;
+    width: 100%; /* Asegúrate de que el ancho del textarea sea 100% */
     overflow: auto; /* Asegura que aparezca una barra de desplazamiento si el contenido es mayor que el área */
 }
 
 div > input[type="checkbox"] {
     margin-bottom: 1rem; /* Ajusta este valor según el espacio que prefieras */
 }
-
 
 footer.footer {
     position: relative;

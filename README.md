@@ -37,7 +37,7 @@ El proyecto se compone de las siguientes páginas y archivos de estilo:
 13. **header.css**: Contiene los estilos del encabezado de todas las páginas. Incluye el logotipo, el menú de navegación principal y el estilo del menú hamburguesa en la versión móvil.
 14. **info.css**: Estilos específicos para las secciones informativas sobre mí, como la biografía y las descripciones de las habilidades en la página principal.
 15. **projects.css**: Define los estilos de la galería de proyectos, estableciendo el diseño de las tarjetas de proyecto, los efectos al pasar el ratón sobre ellas, y la disposición general de la galería.
-16. **skills.css**: Estilos específicos para la sección de habilidades. Incluye el diseño de la lista de habilidades, los iconos de tecnologías, y la presentación de barras de progreso que muestran el nivel de experiencia en cada habilidad.
+16. **skills.css**: Estilos específicos para la sección de habilidades. Incluye el diseño de la lista de habilidades, los iconos de tecnologías, y la presentación de barras de progreso que muestran el nivel de experiencia en cada habilidad. La elección de mantener las líneas en vertical aún en la versión desktop es intencional en pro de la armonía con el fondo.
 
 
 ## Características Principales
