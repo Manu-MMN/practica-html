@@ -20,7 +20,7 @@ form {
 }
 
 .container {
-    background-image: url(images/pics/_MG_8709.jpg);
+    background-image: url(images/pics/MG_8709.jpg);
     background-size: cover; /* que la imagen cubra todo el fondo */
     background-position: center; /* Centrar la imagen */
     background-repeat: no-repeat;
