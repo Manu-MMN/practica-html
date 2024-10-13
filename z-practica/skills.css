@@ -1,35 +1,118 @@
 .skills {
-    position: relative; /* Necesario para el z-index */
-    padding: 2rem; /* Espaciado alrededor */
-    text-align: center; /* Centra el contenido */
-    color: var(--skills-color); /* Color del texto */
-    z-index: 2;
+    padding: 2rem;
+    text-align: center;
+    color: var(--skills-color);
 }
 
 .skill {
-    margin: 1rem 0; /* Espaciado entre habilidades */
+    margin-bottom: 1rem;
 }
 
 .progress-bar {
-    background-color: rgba(255, 255, 255, 0.2); /* Color de fondo de la barra */
-    border-radius: 8px; /* Bordes redondeados */
-    overflow: hidden; /* Oculta la parte que sobresale */
-    height: 20px; /* Altura de la barra de progreso */
-    width: 100%; /* Hace que la barra cubra todo el ancho del contenedor */
-    margin: 0 auto;  /* Centra la barra en pantallas grandes
-    max-width: 70rem;   Limita la anchura máxima de las barras*/
+    background-color: var(--progress-skill-color);
+    border-radius: 8px;
+    overflow: hidden;
+    height: 20px;
+    width: 100%;
+    margin: 0 auto;
 }
+
 
 .progress {
-    background-color: var(--skills-color); /* Color de la barra de progreso */
-    height: 100%; /* Abarca el 100% de la altura */
-    transition: width 0.5s ease; /* Transición suave al cambiar el ancho */
-    width: 0; /* Inicialmente en 0 para animación */
+    background-color: var(--skills-color);
+    height: 100%;
+    width: 0; /* Inicialmente 0 para animación */
+    animation-duration: 2s;
+    animation-fill-mode: forwards; /* Para mantener la animación al final */
 }
 
+.progressbar1 {
+    animation-name: progressbar1;
+}
 
-@media (min-width: 1024px) {
-    .progress-bar {
-        max-width: 65rem; /* Limita el ancho máximo de las barras en pantallas grandes */
+.progressbar2 {
+    animation-name: progressbar2;
+}
+
+.progressbar3 {
+    animation-name: progressbar3;
+}
+
+.progressbar4 {
+    animation-name: progressbar4;
+}
+
+.progressbar5 {
+    animation-name: progressbar5;
+}
+
+.progressbar6 {
+    animation-name: progressbar6;
+}
+
+.progressbar7 {
+    animation-name: progressbar7;
+}
+
+.progressbar8 {
+    animation-name: progressbar8;
+}
+
+.progressbar9 {
+    animation-name: progressbar9;
+}
+
+/* Keyframes personalizados para cada barra */
+@keyframes progressbar1 {
+    to {
+        width: 10%;
+    }
+}
+
+@keyframes progressbar2 {
+    to {
+        width: 20%;
+    }
+}
+
+@keyframes progressbar3 {
+    to {
+        width: 25%;
+    }
+}
+
+@keyframes progressbar4 {
+    to {
+        width: 25%;
+    }
+}
+
+@keyframes progressbar5 {
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes progressbar6 {
+    to {
+        width: 95%;
+    }
+}
+
+@keyframes progressbar7 {
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes progressbar8 {
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes progressbar9 {
+    to {
+        width: 40%;
     }
 }

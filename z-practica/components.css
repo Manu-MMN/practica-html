@@ -12,17 +12,19 @@
 
 /* Estilos para los botones */
 .btn {
-    color: black;
-    background-color: white;
+    color: var(--second-text-color);
+    background-color: var(--main-brand-color-light);
     text-decoration: none;
     padding: 0.7rem;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid var(--input-bg-color);
     transition: background-color 0.5s ease, width 0.5s ease; /* Transición suavizada */
     display: inline-block;
     width: 140px; /* Tamaño inicial del botón */
     text-align: center;
 }
+
+
 
 .btn:hover {
     background-color: #f0f0f0;
@@ -43,7 +45,7 @@
     .menu-btn {
         display: inline-block; /* Mostramos el botón Menú en pantallas móviles */
         background-color: white;
-        color: black;
+        color: var(--input-bg-color);
     }
 }
 
@@ -67,6 +69,6 @@
 
     /* Cuando los botones se expanden, también movemos el texto para compensar */
     .btn:hover ~ .banner-text {
-        margin-left: 60px; /* Mover el texto más hacia la derecha al mismo tiempo que los botones se expanden */
+        margin-left: 120px; /* Mover el texto más hacia la derecha al mismo tiempo que los botones se expanden */
     }
 }

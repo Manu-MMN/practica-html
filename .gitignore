@@ -8,6 +8,13 @@
 /slides
 /styles
 /vscode-shortcuts
+/z-index-backup
+/index-backup-2
+/project back-up-2
+/project-backup
+/z-index-backup.html
+
+
 
 # Pero no ignorar la carpeta z-practica y su contenido
 !/z-practica/

@@ -1,5 +1,9 @@
+
 /* Footer Styling */
 .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background-color: var(--bg-color);
     color: var(--main-text-color);
     padding: 0.25rem 0.13rem;
@@ -32,6 +36,7 @@
     font-size: 0.8rem;
     color: var(--main-text-color);
 }
+
 
 /* Responsive Footer */
 @media (min-width: 768px) {

@@ -1,65 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manu Martínez Contact</title>
     <link rel="stylesheet" href="/z-practica/normalize.css">
+    <link rel="stylesheet" href="/z-practica/vars.css">
     <link rel="stylesheet" href="/z-practica/common.css">
     <link rel="stylesheet" href="/z-practica/components.css">
+    <link rel="stylesheet" href="/z-practica/footer.css">
+    <link rel="stylesheet" href="/z-practica/contact.css">
 </head>
+
 <body class="main-bg-container">
-    <main class="card">
-        <h1>Let's talk!</h1>
-        <form method="post" novalidate autocomplete="off">
-            <div class="form__element">
-                <label for="name">Name</label>
-                <input class="input"
-                type="Name"
-                id="Name"
-                placeholder="name"
-                required
-                >
-        </div>
-        <div class="form__element">
-            <label for="surname">Surname</label>
-            <input class="input" 
-            type="surname"
-            id="surname"
-            placeholder="name"
-            name="surname"
-            required
-            >    
-        </div>
-        <div class="form__element">
-            <label for="tel">Enter your phone number</label>
-            <input class="input" 
-            type="tel"
-            id="tel"
-            name="phone"
-            placeholder="+34 000 00 00 00"
-            maxlength="17"
-            value="+34"
-            required pattern="\+34 [0-9]{3}-[0-9]{3}-[0-9]{3}"
-            >
-        </div>
-        <div class="form__element">
-            <label for="github.username">GitHub Username</label>
-            <input type="input"
-            type="Github-username"
-            id="Github-username"
-            placeholder="Username"
-            name="Github-username"
-            pattern="^@[^\s]+"
-            >
+    <div class="container">
+        <a class="btn back" href="index.html">Back</a>
+        <main class="card">
+            <h1 class="contact-title">Let's talk</h1>
+            <form method="GET" action="/submit-form" autocomplete="off">
+                <div class="form__element">
+                    <label for="name">Name</label>
+                    <input class="input" type="Name" id="name" placeholder="name" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+" required>
+                </div>
+                <div class="form__element">
+                    <label for="surname">Surname</label>
+                    <input class="input" type="surname" id="surname" placeholder="surname" name="surname" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+"  required>
+                </div>
+                <div class="form__element">
+                    <label for="tel">Enter your phone number</label>
+                    <input class="input" type="tel" id="tel" name="phone" placeholder="+34 000 00 00 00" maxlength="17"
+                        value="+34" required pattern="\+34 [0-9]{3}-[0-9]{3}-[0-9]{3}">
+                </div>
+                <div class="form__element">
+                    <label for="github.username">GitHub Username</label>
+                    <input class="input" type="text" id="github.username" placeholder="Username"
+                        name="Github-username" pattern="^@[^\s]+">
+                </div>
+                <fieldset class="form__element">
+                    <legend>How did you find me?</legend>
+                    <div>
+                        <label for="University">University</label>
+                        <input required type="radio" name="place" id="University" value="University">
 
-        </div>
+                        <label for="Keepcoding-kick-off">Keepcoding Kick-off</label>
+                        <input required type="radio" name="place" id="Keepcoding-kick-off" value="Keepcoding-kick-off">
 
+                        <label for="School">School</label>
+                        <input required type="radio" name="place" id="School" value="School">
 
+                        <label for="GitHub">GitHub</label>
+                        <input required type="radio" name="place" id="GitHub" value="GitHub">
+                    </div>
+                </fieldset>
 
-        </form>
+                <div class="form__element">
+                    <label for="bio">Something about yourself?</label>
+                    <textarea class="input" required name="userbio" id="bio" rows="5" maxlength="200"></textarea>
+                </div>
 
-    </main>
-    
+                <div>
+                    <label for="remember">Remember me</label>
+                    <input type="checkbox" name="remember" id="remember">
+                </div>
+                <div class="form__actions">
+                    <button class="btn secondary" type="Reset" value="Reset">Reset</button>
+                    <button class="btn" type="submit" value="submit">Submit</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <ul class="social-links">
+            <li><a href="https://github.com/Manu-MMN" target="_blank"><img src="/z-practica/images/logos/icons8-github-96.png" alt="Manu-GitHub" class="social-icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/manuelmartinez616/" target="_blank"><img src="/z-practica/images/logos/icons8-linkedin-96.png" alt="Manu-LinkedIn" class="social-icon"></a></li>
+            <li><a href="https://www.instagram.com/bare.brann/" target="_blank"><img src="/z-practica/images/logos/icons8-instagram-96.png" alt="Manu-Instagram" class="social-icon"></a></li>
+        </ul>
+        <p class="footer-text">© 2024 Manu Martínez. No rights deserved.</p>
+    </footer>
+
 </body>
+
 </html>

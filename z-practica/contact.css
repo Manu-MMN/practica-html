@@ -1,0 +1,98 @@
+/* Aplica la fuente general a todo el formulario */
+
+.back {
+    border-color: none;
+    border-style: none;
+    position: absolute;
+    font-family: var(--main-font-family);
+    background-color: var(--main-brand-color-light);
+
+}
+
+.contact-title {
+    text-align: center;
+    font-family: var(--main-font-family);
+    opacity: 0.6;
+}
+
+form {
+    font-family: var(--main-font-family); /* Hereda la fuente del body */
+}
+
+.container {
+    background-image: url(/z-practica/images/pics/_MG_8709.jpg);
+    background-size: cover; /* que la imagen cubra todo el fondo */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+
+
+.card {
+    background-color: rgba(224, 219, 224, 0.7);
+    border-radius: 4px;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    z-index: 0;
+    text-align: center;
+}
+
+/* Estilo general para los inputs */
+.input {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con 80% de opacidad */
+    color: var(--second-text-color); /* Color del texto */
+    border: 1px solid var(--main-brand-color-light); /* Borde gris claro */
+    padding: 10px; /* Espaciado interno */
+    width: 100%;
+    border-radius: 4px; /* Bordes redondeados */
+    margin-bottom: 1rem; /* Espacio entre elementos */
+    opacity: 0.9; /* Control de la opacidad */
+    
+}
+
+/* Cuando el input está en foco (clickeado) */
+.input:focus {
+    background-color: rgba(255, 255, 255, 0,8); /* Fondo completamente visible */
+    border-color: var(--bg-color); /* Borde cambia a azul cuando se hace clic */
+    outline: none; /* Eliminamos el borde por defecto */
+    opacity: 1; /* Opacidad completa cuando está en foco */
+}
+
+
+
+form label, form input, form textarea, form button, form legend {
+    display: block;
+    margin: 0 auto 0,2rem auto;
+    width: 100%;
+    text-align: center; /* Centra el texto en labels, inputs, textareas y botones */
+}
+
+/* Espacio entre "Something about yourself?" y el textarea */
+label[for="bio"] {
+    margin-bottom: 0.4rem; /* Añade un poco de espacio debajo del label */
+}
+
+/* Para controlar el textarea dentro de los límites del formulario */
+textarea.input {
+    resize: both; /* Permite redimensionar el textarea tanto en ancho como en alto */
+    max-width: 100%; /* El ancho máximo será igual al ancho del formulario */
+    max-height: 300px; /* Ajusta la altura máxima */
+    min-height: 200px; /* El alto mínimo del textarea */
+    min-width: 340px;
+    overflow: auto; /* Asegura que aparezca una barra de desplazamiento si el contenido es mayor que el área */
+}
+
+div > input[type="checkbox"] {
+    margin-bottom: 1rem; /* Ajusta este valor según el espacio que prefieras */
+}
+
+
+footer.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

@@ -24,7 +24,7 @@
     width: 100px; /* Ajusta el tamaño de la imagen */
     height: 100px; /* Forzamos una proporción cuadrada para la imagen */
     margin-right: 1rem; /* Añadimos espacio entre la imagen y el nombre */
-    border-radius: 5px solid var(white);
+    border-radius: 5px solid var(--border-color);
 }
 
 .header h1 {

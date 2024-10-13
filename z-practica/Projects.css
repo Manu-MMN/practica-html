@@ -1,0 +1,165 @@
+/* Estilo general para el botón "Back" */
+.back {
+    position: absolute; /* Posición absoluta respecto al contenedor padre */
+    top: 20px; /* Ajusta la distancia desde el borde superior */
+    left: 20px; /* Ajusta la distancia desde el borde izquierdo */
+    font-family: var(--main-font-family);
+    background-color: var(--main-brand-color-light);
+    color: var(--bg-color); /* Color del texto */
+    cursor: pointer;
+    z-index: 10; /* Asegura que el botón esté por encima del contenido */
+}
+
+html, body {
+    width:  100%;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.main-project-bg {
+    font-family: var(--main-font-family);
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Esto permite que el botón con 'absolute' se posicione dentro de este contenedor */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la pantalla */
+    z-index: 1; /* Asegura que el contenido esté en la capa superior */
+}
+
+/* Pseudo-elemento para crear la capa con opacidad */
+.main-project-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/z-practica/images/pics/_MG_8734.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8; /* Ajusta la opacidad según lo que necesites (0.0 - 1.0) */
+    z-index: -1; /* Envía la capa detrás del contenido */
+}
+
+.text-projects {
+    color: var(--main-brand-color-light);
+    opacity: 0.0;
+    margin-top: 20px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.project-bg-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    max-width: 800px;
+}
+
+video {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    opacity: 0; /* Empieza con opacidad 0 para el efecto fade-in */
+    animation: fadeIn 3s forwards; /* Aplica la animación de fade in al video */
+}
+
+
+.grid-project {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 800px;
+    margin-bottom: 150px;
+}
+
+/* Grilla para proyectos */
+.grids {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Default: una columna */
+}
+
+.grids li {
+    text-align: center;
+    color: var(--main-brand-color-light)
+}
+
+img {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Estilo del footer */
+footer.footer {
+    width: 100%;
+    margin: 0 auto;
+    bottom: 0;
+}
+
+/* Animación de fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+/* Media queries para pantallas medianas (426px a 768px) */
+@media (min-width: 426px) and (max-width: 768px) {
+    .grids {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas entre 426px y 768px */
+    }
+}
+
+/* Media queries para pantallas grandes (768px o más) */
+@media (min-width: 768px) {
+    .grids {
+        grid-template-columns: repeat(4, 1fr); /* Cuatro columnas a partir de 768px */
+    }
+
+    .project-bg-1 {
+        height: 500px; /* Aumenta el tamaño del video en desktop */
+    }
+}
+
+
+/* Ajustes para dispositivos móviles (pantallas más pequeñas) */
+@media (max-width: 768px) {
+    .back {
+        top: 10px; /* Mueve el botón un poco más hacia arriba */
+        left: 10px; /* Mueve el botón más hacia la izquierda */
+    }
+
+    .text-projects {
+        margin-top: 20px; /* Añade margen extra al texto de "Projects" para evitar solapamientos */
+        margin-left: 120px;
+    }
+}
