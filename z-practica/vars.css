@@ -1,16 +1,18 @@
 :root {
     --bg-color: #201f1f;
+    --second-bg-color: rgba(224, 219, 224, 0.7);
     --main-brand-color: #959296;
     --main-brand-color-light: rgb(224, 219, 224);
     --skills-color: #ffffff;
     --secondary-brand-color: #0e1b4f;
     --main-text-color: #FFF;
     --second-text-color:black;
+    --second-contact-color: rgba(255, 255, 255, 0.5);
     --border-color: #ffffff;
     --input-bg-color: #333;
     --main-font-family: Arial, Helvetica, sans-serif;
     --progress-skill-color: rgba(255, 255, 255, 0.2);
-    
+    --text-shadows:rgba(0, 0, 0, 0.8);
     font-size: 20px;
 
 }

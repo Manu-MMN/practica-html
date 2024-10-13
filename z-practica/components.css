@@ -27,7 +27,6 @@
 
 
 .btn:hover {
-    background-color: #f0f0f0;
     width: 180px; /* Ancho del botón cuando se pasa el cursor por encima */
 }
 
@@ -44,7 +43,6 @@
 
     .menu-btn {
         display: inline-block; /* Mostramos el botón Menú en pantallas móviles */
-        background-color: white;
         color: var(--input-bg-color);
     }
 }

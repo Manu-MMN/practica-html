@@ -3,7 +3,6 @@
     z-index: 1; /* Mantener el texto por encima */
     text-align: center;
     color: var(--main-brand-color-light); 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
 }
 
 .info-image {

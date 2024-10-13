@@ -31,7 +31,7 @@ form {
 
 
 .card {
-    background-color: rgba(224, 219, 224, 0.7);
+    background-color: var(--second-bg-color);
     border-radius: 4px;
     width: 100%;
     max-width: 420px;
@@ -43,7 +43,7 @@ form {
 
 /* Estilo general para los inputs */
 .input {
-    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con 80% de opacidad */
+    background-color: var(--second-contact-color);
     color: var(--second-text-color); /* Color del texto */
     border: 1px solid var(--main-brand-color-light); /* Borde gris claro */
     padding: 10px; /* Espaciado interno */

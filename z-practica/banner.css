@@ -30,7 +30,7 @@
     font-size: 3rem;  /* Aumenta el tamaño del texto */
     font-weight: bold;
     color: var(--main-text-color);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);  /* Añade una sombra para hacer el texto más visible */
+    text-shadow: 2px 2px 4px var(--text-shadows);  /* Añade una sombra para hacer el texto más visible */
 }
 
 /* Media Query para pantallas mayores a 768px */
