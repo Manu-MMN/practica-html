@@ -3,6 +3,8 @@
     z-index: 1; /* Mantener el texto por encima */
     text-align: center;
     color: var(--main-brand-color-light); 
+    max-width: 70%;
+    margin: 0 auto;
 }
 
 .info-image {

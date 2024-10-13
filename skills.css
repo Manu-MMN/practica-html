@@ -116,3 +116,14 @@
         width: 40%;
     }
 }
+
+
+
+
+/* Media query para pantallas más grandes (desktop) */
+@media (min-width: 768px) {
+    .progress-bar {
+        width: 70%; /* Ajusta el ancho al 80% en desktop */
+    }
+
+}
