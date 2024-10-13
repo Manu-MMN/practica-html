@@ -1,0 +1,73 @@
+/* Ocultar el checkbox de menú */
+.menu-toggle {
+    display: none;
+}
+
+/* Estilo del ícono del menú (hamburguesa) */
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none; /* Oculto en pantallas de escritorio */
+    position: relative; /* Mantener el icono dentro del flujo del header */
+    z-index: 100; /* Asegurar que el icono esté sobre el contenido */
+}
+
+/* Ocultar el menú por defecto */
+.mobile-menu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    text-align: center;
+
+    /* Posicionamiento absoluto para que el menú se despliegue fuera del header */
+    position: absolute;
+    top: 100%; /* Posicionar justo debajo del header */
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    z-index: 99; /* Asegurar que se muestre sobre el contenido principal */
+}
+
+.mobile-menu li {
+    padding: 10px 0;
+}
+
+.mobile-menu li a {
+    text-decoration: none;
+    color: var(--main-brand-color-light);
+    font-size: 18px;
+}
+
+/* Mostrar el menú si el checkbox está seleccionado */
+.menu-toggle:checked + .menu-icon + .nav .mobile-menu {
+    display: block;
+    animation: slideDown 0.5s ease; /* Animación para un efecto de despliegue */
+}
+
+/* Animación para que el menú se despliegue hacia abajo */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos específicos para pantallas móviles */
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none; /* Ocultar los elementos de escritorio en pantallas móviles */
+    }
+
+    .menu-icon {
+        display: inline-block; /* Mostrar el icono del menú hamburguesa */
+    }
+
+    .nav .list {
+        display: none; /* Ocultar el menú de escritorio */
+    }
+}
